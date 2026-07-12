@@ -1,0 +1,17 @@
+{
+  "name": "framewave-examples",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "mp4-muxer": "^5.1.5",
+    "webm-muxer": "^5.0.3"
+  }
+}

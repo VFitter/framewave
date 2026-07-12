@@ -1,0 +1,21 @@
+{
+  "name": "@framewave/core",
+  "version": "0.1.0",
+  "description": "Deterministic, frame-pure animation engine: analytic springs, OKLab color, motion paths, staggers, text animators, audio analysis.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "sideEffects": false,
+  "keywords": ["animation", "motion-graphics", "webgpu", "video", "deterministic", "spring", "easing"]
+}

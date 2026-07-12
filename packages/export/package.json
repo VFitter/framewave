@@ -1,0 +1,26 @@
+{
+  "name": "@framewave/export",
+  "version": "0.1.0",
+  "description": "WebCodecs export pipeline for Framewave — hardware-accelerated MP4/WebM encoding straight from the renderer, no headless browser, no FFmpeg.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@framewave/core": "0.1.0",
+    "@framewave/gpu": "0.1.0",
+    "mp4-muxer": "^5.1.5",
+    "webm-muxer": "^5.0.3"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "framewave",
+  "version": "0.1.0",
+  "description": "GPU-first, deterministic motion graphics for the web. WebGPU rendering, WebCodecs export, analytic springs, OKLab color — MIT licensed.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VFitter/framewave.git"
+  },
+  "keywords": [
+    "motion-graphics", "animation", "video", "webgpu", "webcodecs",
+    "remotion-alternative", "deterministic", "spring", "kinetic-typography"
+  ],
+  "dependencies": {
+    "@framewave/core": "0.1.0",
+    "@framewave/gpu": "0.1.0",
+    "@framewave/export": "0.1.0"
+  }
+}

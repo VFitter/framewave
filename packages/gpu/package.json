@@ -1,0 +1,23 @@
+{
+  "name": "@framewave/gpu",
+  "version": "0.1.0",
+  "description": "WebGPU renderer for Framewave scenes — SDF shapes, real motion blur, glow, film grain — with a Canvas2D fallback.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@framewave/core": "0.1.0"
+  }
+}

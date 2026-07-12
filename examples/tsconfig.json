@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["@webgpu/types", "vite/client"],
+    "paths": {
+      "@framewave/core": ["../packages/core/src/index.ts"],
+      "@framewave/gpu": ["../packages/gpu/src/index.ts"],
+      "@framewave/export": ["../packages/export/src/index.ts"],
+      "framewave": ["../packages/framewave/src/index.ts"]
+    }
+  },
+  "include": ["**/*.ts"]
+}

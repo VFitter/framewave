@@ -1,0 +1,23 @@
+{
+  "name": "framewave-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Framewave — a GPU-first, deterministic motion graphics engine for the web. WebGPU rendering, WebCodecs export, analytic animation math.",
+  "license": "MIT",
+  "author": "Elijah Royaie",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "tsc -b packages/core packages/gpu packages/export packages/framewave",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@webgpu/types": "^0.1.51",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

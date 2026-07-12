@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+coverage/
+*.log
+.claude-flow/
+.swarm/
+CLAUDE.local.md
+data/memory/
