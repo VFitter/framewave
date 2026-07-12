@@ -21,6 +21,7 @@ export default defineConfig({
         typography: p('./kinetic-typography/index.html'),
         visualizer: p('./audio-visualizer/index.html'),
         logo: p('./logo-reveal/index.html'),
+        motivd: p('./motivd-promo/index.html'),
       },
     },
   },

@@ -12,9 +12,12 @@
     "build": "npm run build --workspaces --if-present",
     "typecheck": "tsc -b packages/core packages/gpu packages/export packages/framewave",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "render:node": "tsx scripts/render-node.mts"
   },
   "devDependencies": {
+    "@napi-rs/canvas": "^0.1.65",
+    "tsx": "^4.19.2",
     "@types/node": "^22.10.0",
     "@webgpu/types": "^0.1.51",
     "typescript": "^5.7.2",
