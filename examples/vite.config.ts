@@ -5,6 +5,9 @@ const p = (rel: string): string => fileURLToPath(new URL(rel, import.meta.url));
 
 // Examples run straight from source — no build step needed.
 export default defineConfig({
+  // Relative assets keep the multi-page build portable under GitHub Pages
+  // project paths as well as custom domains.
+  base: './',
   resolve: {
     alias: {
       '@framewave/core': p('../packages/core/src/index.ts'),

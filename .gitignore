@@ -3,6 +3,9 @@ dist/
 *.tsbuildinfo
 .DS_Store
 coverage/
+test-results/
+playwright-report/
+blob-report/
 *.log
 .claude-flow/
 .swarm/
