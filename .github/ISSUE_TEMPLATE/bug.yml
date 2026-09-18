@@ -1,0 +1,47 @@
+name: Bug report
+description: Report a reproducible problem in Framewave or its examples.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve Framewave. Please remove private assets and reduce the problem to the smallest reproducible composition.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the observed behaviour and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Link a repository or paste the smallest scene/build function that demonstrates the problem.
+    validations:
+      required: true
+  - type: dropdown
+    id: renderer
+    attributes:
+      label: Renderer
+      options:
+        - WebGPU
+        - Canvas2D fallback
+        - Node canvas
+        - Export pipeline
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser and version, operating system, Node version, and Framewave package version.
+      placeholder: Chrome 145, macOS 27, Node 22, framewave 0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Additional evidence
+      description: Include console output, screenshots, exported-frame differences, or failing tests when useful.

@@ -1,0 +1,33 @@
+name: Feature proposal
+description: Propose a focused addition that preserves Framewave's deterministic model.
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What composition or production workflow is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the smallest API or example change that would solve it.
+    validations:
+      required: true
+  - type: textarea
+    id: determinism
+    attributes:
+      label: Determinism and renderer parity
+      description: Explain how the feature stays frame-pure and behaves in WebGPU and Canvas2D, or how it degrades gracefully.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance checks
+      description: List the tests, visual proof, documentation, or performance evidence that would make the work complete.
+    validations:
+      required: true

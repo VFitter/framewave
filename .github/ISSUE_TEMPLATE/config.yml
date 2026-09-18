@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Usage question or design discussion
+    url: https://github.com/VFitter/framewave/discussions
+    about: Ask about compositions, rendering architecture, or proposed APIs before filing an issue.
