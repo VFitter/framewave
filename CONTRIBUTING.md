@@ -38,4 +38,4 @@ cd examples && npm install && npm run dev   # visual smoke test
 
 ## Releasing
 
-Maintainers publish from `main` once CI is green (`npm publish -w @framewave/core -w @framewave/gpu -w @framewave/export -w framewave`).
+Maintainers publish from `main` only after CI and the package-consumer smoke test are green. Follow the [package publication checklist](./docs/PUBLISHING.md); do not publish the umbrella package before its three internal dependencies are available at the same version.

@@ -2,6 +2,7 @@
   "name": "@framewave/export",
   "version": "0.1.0",
   "description": "WebCodecs export pipeline for Framewave — hardware-accelerated MP4/WebM encoding straight from the renderer, no headless browser, no FFmpeg.",
+  "author": "Elijah Royaie",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -14,9 +15,27 @@
   },
   "files": ["dist"],
   "scripts": {
-    "build": "tsc -b"
+    "build": "tsc -b",
+    "prepack": "npm run build"
   },
   "sideEffects": false,
+  "keywords": ["webcodecs", "video", "mp4", "webm", "motion-graphics", "export"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VFitter/framewave.git",
+    "directory": "packages/export"
+  },
+  "homepage": "https://vfitter.github.io/framewave/",
+  "bugs": {
+    "url": "https://github.com/VFitter/framewave/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "dependencies": {
     "@framewave/core": "0.1.0",
     "@framewave/gpu": "0.1.0",

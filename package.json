@@ -14,6 +14,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
+    "verify:packages": "npm run build && node scripts/verify-package-tarballs.mjs",
     "render:node": "tsx scripts/render-node.mts"
   },
   "devDependencies": {
