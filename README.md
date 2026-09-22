@@ -5,6 +5,8 @@
 [![CI](https://github.com/VFitter/framewave/actions/workflows/ci.yml/badge.svg)](https://github.com/VFitter/framewave/actions/workflows/ci.yml)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
+![Framewave logo reveal: a comet resolves into the Framewave waveform mark](./assets/social/framewave-logo-reveal.gif)
+
 ```ts
 import { Composition, spring, textAnimator, createRenderer, renderToVideo } from 'framewave';
 
@@ -73,11 +75,12 @@ npm test            # 32 unit tests on the animation math
 cd examples && npm install && npm run dev
 ```
 
-Three demos ship in `examples/`:
+Four demos ship in `examples/`:
 
 - **Kinetic typography** — center-out spring staggers, OKLab color sweeps, idle wiggle
 - **Audio visualizer** — synthesized beat → band envelopes → radial GPU bars (swap in your own PCM)
 - **Logo reveal** — comet on an arc-length motion path, particle trail, shockwave, MP4 export button
+- **Product promo** — a complete branded motion piece combining animated type, feature cards, paths, particles, and a call to action
 
 ## API highlights
 
